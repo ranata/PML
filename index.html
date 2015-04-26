@@ -152,7 +152,7 @@ legend(&quot;top&quot;, colnames(modFitRF$err.rate),col=1:6,cex=0.8,fill=1:6)</c
 ## C    0   16 2380    0    0 0.006677796
 ## D    0    0   29 2220    3 0.014209591
 ## E    0    0    1    8 2516 0.003564356</code></pre>
-<p>The graph shows very low error rate with 500 tree classification across activity quality. Also, the model shows that the OOB estimate of error rate is 0.5% on the training set. We will now perform a cross validation on out of sample data to check accuracy.</p>
+<p>The graph shows very low error rate with 500 tree classification across activity quality. Also, the model shows that the OOB estimate of error rate is 0.63% on the training set. We will now perform a cross validation on out of sample data to check accuracy.</p>
 <pre class="r"><code>pred &lt;- predict(modFitRF, testingSet, type = &quot;class&quot;)
 
 confusionMatrix(pred, testingSet$classe)</code></pre>
