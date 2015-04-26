@@ -80,7 +80,7 @@ legend("top", colnames(modFitRF$err.rate),col=1:6,cex=0.8,fill=1:6)
 
 print(modFitRF)
 ```
-The graph shows very low error rate with 500 tree classification across activity quality. Also, the model shows that the OOB estimate of error rate is 0.55% on the training set. We will now perform a cross validation on out of sample data to check accuracy.
+The graph shows very low error rate with 500 tree classification across activity quality. Also, the model shows that the OOB estimate of error rate is 0.5% on the training set. We will now perform a cross validation on out of sample data to check accuracy.
 
 
 ```{r}
